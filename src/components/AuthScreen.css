@@ -1,0 +1,195 @@
+/* General Styling */
+.auth-screen {
+  background: #121212;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Styling */
+.form-container h3 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #333;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #007ACC;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #007ACC;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #005f9e;
+}
+
+button:disabled {
+  background: #004470;
+  cursor: not-allowed;
+}
+
+.switch-auth {
+  color: #007ACC;
+  cursor: pointer;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+/* Message Status */
+.message {
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.message.info {
+  background: #333;
+  color: #007ACC;
+}
+
+.message.error {
+  background: #5c1818;
+  color: #ff4d4d;
+}
+
+.message.success {
+  background: #1c4b2a;
+  color: #4CAF50;
+}
+
+/* --- Tier Selection Styling --- */
+.tier-selection-container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 15px;
+}
+
+.logout-btn {
+  width: auto;
+  padding: 8px 15px;
+  margin: 0;
+  background: #dc3545;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+.current-tier-info {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.tier-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.tier-badge.tier-0 {
+  background: #444;
+  color: #bbb;
+}
+
+.tier-badge.tier-1 {
+  background: #007ACC; /* Pro */
+  color: white;
+}
+
+.tier-badge.tier-2 {
+  background: #ffc107; /* Elite */
+  color: #1e1e1e;
+}
+
+.tier-card {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.tier-card-1 {
+  border-left: 5px solid #007ACC;
+}
+
+.tier-card-2 {
+  border-left: 5px solid #ffc107;
+}
+
+.tier-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tier-header h4 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.price {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.features {
+  font-size: 0.95em;
+  color: #bbb;
+}
+
+.purchase-btn {
+  margin-top: 15px;
+  background: #4CAF50;
+}
+
+.purchase-btn:hover:not(:disabled) {
+  background: #419f44;
+}

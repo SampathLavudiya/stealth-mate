@@ -1,0 +1,10 @@
+# Credentials
+.env
+
+# Logs
+npm-debug.log*
+*.log
+
+# Dependencies
+/node_modules
+node_modules
